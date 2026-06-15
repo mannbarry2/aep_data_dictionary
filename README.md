@@ -1,3 +1,13 @@
+> ## ⚠️ There is now a Data Dictionary **v3** (recommended)
+>
+> This repository is **version 2**: it builds a data dictionary from `.ndjson` files exported out of AEP to **FTP / Azure Blob** and read from disk. It still works, and the write-up below stands.
+>
+> **[Data Dictionary v3](https://github.com/mannbarry2/aep-swiss-army-knife)** — part of the *AEP Swiss Army Knife* — is a rewrite that talks to the **AEP APIs directly** and streams everything **in memory**: no FTP drop, no interception, **nothing written to disk except the final workbook**. That makes it materially safer for confidential data. It also adds a master **field index**, one **ERD-ready tab per schema** (paste into Claude → Mermaid), and on-demand **field coverage + top-5 example values**.
+>
+> ➡️ See [`data_dictionary_v3.py`](https://github.com/mannbarry2/aep-swiss-army-knife/blob/main/data_dictionary_v3.py). A new Medium article covering v3 will follow.
+
+---
+
 # Background
 
 See [my 2024 medium article](https://medium.com/@barrymann2/introducing-an-aep-data-dictionary-e760e8ad38e1#). Following feedback and suggestions, I have rewritten these instructions to make it easier for suers to produce an AEP Data Health Dashboard for themselves.
